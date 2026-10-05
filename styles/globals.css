@@ -1,0 +1,191 @@
+:root {
+	--gold: #C8A95B;
+	--gold-soft: #BFA46A;
+	--gold-light: #D4B98A;
+	--cta-red-from: #8b1219;
+	--cta-red-to: #611014;
+	--card-radius: 24px;
+	--card-border: 1.6px;
+	--display-title-mobile: clamp(28px, 7.5vw, 48px);
+	--display-title-md: clamp(40px, 5.5vw, 64px);
+	--price-mobile: clamp(22px, 5.5vw, 44px);
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Load display serif for catalog hero (Playfair Display) */
+
+html {
+	scroll-behavior: smooth;
+	scrollbar-color: var(--color-scrollbar-thumb, #ec4899) var(--color-scrollbar-track, #fce7f3);
+	text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+body {
+    background: var(--color-page-bg, #fafafa);
+    color: var(--color-text-dark, #0f172a);
+    text-rendering: optimizeLegibility;
+    scrollbar-color: var(--color-scrollbar-thumb, #ec4899) var(--color-scrollbar-track, #fce7f3);
+}
+
+/* Utility: use Playfair for prominent display headings */
+.font-display, .font-serif {
+		font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+}
+
+/* Pixel-perfect helpers for catalog card */
+.catalog-card {
+	border-radius: var(--card-radius);
+	border: var(--card-border) solid rgba(200,169,91,0.12);
+	background: #070606;
+}
+
+/* Responsive typographic scaling for catalog card */
+.catalog-title-mobile {
+	font-size: var(--display-title-md);
+	line-height: 0.95;
+}
+.catalog-price-mobile {
+	font-size: var(--price-mobile);
+}
+
+@media (max-width: 767px) {
+	.catalog-title-mobile {
+		font-size: var(--display-title-mobile) !important;
+		line-height: 0.98 !important;
+	}
+	.catalog-price-mobile {
+		font-size: calc(var(--price-mobile) * 0.9) !important;
+	}
+}
+
+/* Global page scrollbar (main document scroll) */
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+	width: var(--scrollbar-size, 8px);
+	height: var(--scrollbar-size, 8px);
+}
+
+html::-webkit-scrollbar-thumb,
+body::-webkit-scrollbar-thumb {
+	border-radius: 9999px;
+	background: var(--color-scrollbar-thumb, #ec4899);
+	border: 3px solid var(--color-scrollbar-track, #fce7f3);
+}
+
+html::-webkit-scrollbar-track,
+body::-webkit-scrollbar-track {
+	background: var(--color-scrollbar-track, #fce7f3);
+	border-radius: 9999px;
+}
+
+.no-scrollbar::-webkit-scrollbar{display:none;}
+.no-scrollbar{-ms-overflow-style:none;scrollbar-width:none;}
+
+/* Dynamic theme bridge: lets existing Tailwind color utilities follow siteData theme */
+.bg-pink-500 { background-color: var(--color-primary) !important; }
+.hover\:bg-pink-500:hover { background-color: var(--color-primary) !important; }
+.hover\:bg-pink-600:hover { background-color: var(--color-primary-hover) !important; }
+.bg-pink-600 { background-color: var(--color-primary-hover) !important; }
+.bg-pink-50 { background-color: var(--color-primary-soft) !important; }
+.bg-pink-100 { background-color: var(--color-primary-soft-hover) !important; }
+.hover\:bg-pink-200:hover { background-color: var(--color-primary-soft-hover) !important; }
+.border-pink-500 { border-color: var(--color-primary) !important; }
+.border-pink-400 { border-color: var(--color-primary-border) !important; }
+.border-pink-300 { border-color: var(--color-primary-border) !important; }
+.border-pink-200 { border-color: var(--color-primary-soft-hover) !important; }
+.text-pink-300 { color: var(--color-primary-border) !important; }
+.text-pink-500 { color: var(--color-primary) !important; }
+.text-pink-600 { color: var(--color-primary-text) !important; }
+.hover\:text-pink-600:hover { color: var(--color-primary-text) !important; }
+.hover\:text-pink-500:hover { color: var(--color-primary) !important; }
+.bg-green-500 { background-color: var(--color-accent-green) !important; }
+.hover\:bg-green-600:hover { background-color: var(--color-accent-green-hover) !important; }
+
+/* Shared themed scrollbar for drawers/menus */
+.themed-scrollbar {
+	scrollbar-width: thin;
+	scrollbar-color: var(--color-scrollbar-thumb, #ec4899) var(--color-scrollbar-track, #fce7f3);
+}
+
+.themed-scrollbar::-webkit-scrollbar {
+	width: var(--scrollbar-size, 8px);
+	height: var(--scrollbar-size, 8px);
+}
+
+.themed-scrollbar::-webkit-scrollbar-thumb {
+	border-radius: 9999px;
+	background: var(--color-scrollbar-thumb, #ec4899);
+	border: 3px solid var(--color-scrollbar-track, #fce7f3);
+}
+
+.themed-scrollbar::-webkit-scrollbar-track {
+	background: var(--color-scrollbar-track, #fce7f3);
+	border-radius: 9999px;
+}
+
+/* Keep mobile form controls >=16px to prevent Safari iOS focus zoom. */
+@media (max-width: 1024px) {
+	input[type="text"],
+	input[type="search"],
+	input[type="email"],
+	input[type="tel"],
+	input[type="url"],
+	input[type="password"],
+	select,
+	textarea {
+		font-size: 16px;
+	}
+}
+
+/* Fallback utility for explicit controls that must never trigger iOS zoom. */
+@supports (-webkit-touch-callout: none) {
+	.ios-no-zoom {
+		font-size: 16px !important;
+	}
+}
+
+@keyframes toastIn {
+	0% {
+		opacity: 0;
+		transform: translateY(12px) scale(0.98);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0) scale(1);
+	}
+}
+
+@keyframes orderCardIn {
+	0% {
+		opacity: 0;
+		transform: translateY(18px) scale(0.985);
+	}
+	60% {
+		opacity: 1;
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0) scale(1);
+	}
+}
+
+@keyframes catalogSheetIn {
+	0% {
+		opacity: 0;
+		transform: translateY(22px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@media (max-width: 767px) {
+	.catalog-sheet-enter {
+		animation: catalogSheetIn 280ms cubic-bezier(0.22, 1, 0.36, 1);
+	}
+}

@@ -1,0 +1,34 @@
+{
+  "name": "catalogo-cielitodefloresvip",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "audit:predeploy:json": "node scripts/export-predeploy-report.mjs",
+    "validate:tenant-images": "node scripts/validate-tenant-catalog-images.mjs",
+    "validate:tenant-content-links": "node scripts/validate-tenant-content-links.mjs",
+    "predeploy:check": "npm run validate:tenant-images && npm run validate:tenant-content-links && npm run build",
+    "predeploy:report": "npm run audit:predeploy:json && npm run predeploy:check",
+    "e2e:install": "npx playwright install --with-deps",
+    "test:e2e": "npx playwright test"
+  },
+  "dependencies": {
+    "react-icons": "^4.11.0",
+    "googleapis": "^171.4.0",
+    "lucide-react": "^1.8.0",
+    "next": "^16.0.0",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.61.1",
+    "@types/node": "25.5.0",
+    "@types/react": "19.2.14",
+    "autoprefixer": "^10.4.0",
+    "postcss": "^8.4.0",
+    "tailwindcss": "^3.4.0",
+    "typescript": "^5.4.0"
+  }
+}

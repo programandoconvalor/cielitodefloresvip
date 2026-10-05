@@ -1,0 +1,30 @@
+{
+  "version": 1,
+  "name": "context7",
+  "description": "MCP project-level configuration for context7 environment",
+  "scope": "project",
+  "environments": {
+    "context7": {
+      "tenant": "context7",
+      "build": {
+        "outputDir": ".next",
+        "publicDir": "public"
+      },
+      "assets": {
+        "basePath": "/assets/context7",
+        "include": ["data/site/**", "public/**"]
+      },
+      "routes": {
+        "baseUrl": "/",
+        "rewrites": []
+      },
+      "secrets": {
+        "envFile": ".env.local"
+      }
+    }
+  },
+  "metadata": {
+    "createdBy": "opencode",
+    "createdAt": "2026-08-06T00:00:00.000Z"
+  }
+}

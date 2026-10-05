@@ -1,0 +1,10 @@
+export { default as CatalogHeader } from './CatalogHeader';
+export { default as CatalogSearch } from './CatalogSearch';
+export { default as CategoryTabs } from './CategoryTabs';
+export { default as ProductGrid } from './ProductGrid';
+export { default as ProductCard } from './ProductCard';
+export { default as ProductImageCarousel } from './ProductImageCarousel';
+export { default as ProductInfo } from './ProductInfo';
+export { default as ProductPrice } from './ProductPrice';
+export { default as ProductActions } from './ProductActions';
+export { default as BottomBenefits } from './BottomBenefits';
