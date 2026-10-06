@@ -142,11 +142,13 @@ export default function ProductImageLightbox({
       onTouchEnd={onTouchEnd}
       onWheel={onWheel}
     >
-      <div className="absolute top-4 left-4 text-white">
-        <button aria-label="Cerrar galería" onClick={onClose} className="text-2xl leading-none">✕</button>
-      </div>
-
-      <div className="absolute top-4 right-4 text-white text-sm">{index + 1} / {images.length}</div>
+      <button
+        aria-label="Cerrar galería"
+        onClick={onClose}
+        className="absolute top-4 right-4 inline-flex h-12 w-12 items-center justify-center rounded-full bg-[var(--gold)] text-2xl leading-none text-white"
+      >
+        ✕
+      </button>
 
       <div className="flex flex-1 items-center justify-center w-full h-full p-4">
         <div className="relative max-h-full max-w-full flex items-center justify-center">
@@ -169,16 +171,11 @@ export default function ProductImageLightbox({
         </div>
       </div>
 
-      {/* indicators and product info */}
+      {/* product info */}
       <div className="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center text-white">
-        <div className="flex gap-2 mb-3">
-          {images.map((_, i) => (
-            <span key={i} className={`block rounded-full ${i===index? 'bg-[var(--color-primary)]':'bg-white/60'}`} style={{width: i===index?10:7, height: i===index?10:7}} />
-          ))}
-        </div>
-
         <div className="text-center">
           <div className="font-display text-lg" style={{color:'var(--gold)'}}>{productTitle}</div>
+          {selectedSizeLabel && <div className="mt-1">{selectedSizeLabel}</div>}
           <div className="mt-1 font-extrabold">${priceMxn.toLocaleString('es-MX')}</div>
         </div>
       </div>

@@ -35,7 +35,7 @@ export default function ProductPrice({
             color: "var(--gold)",
           }}
         >
-          ${price.toLocaleString("es-MX")}
+          <span className="font-sans">$</span>{price.toLocaleString("es-MX")}
         </span>
 
         <span
