@@ -52,7 +52,7 @@ export const siteData = {
   seo: {
   title: `Arreglos Florales Exclusivos | ${site.businessName} `,
   description:
-    "Flores personalizadas, arreglos florales VIP, cajas sorpresa, peluches y regalos para cumpleaños, aniversarios y Flores para Novia. Entregas en San Mateo Atenco, Metepec, Lerma, Toluca y alrededores. Realiza tu pedido por WhatsApp.",
+    "Flores personalizadas, arreglos florales VIP, Rosas Premium, Gerberas, peluches y Globos de Helio para cumpleaños, aniversarios y Corazones de Flores para Novia. Entregas en San Mateo Atenco, Metepec, Lerma, Toluca y alrededores. Realiza tu pedido por WhatsApp.",
   
   canonical: "https://cielitodefloresvip.vercel.app",
   robots: {
@@ -66,58 +66,55 @@ export const siteData = {
     "Cielito de Flores en San Mateo Atenco",
 
     // Principal
-    "globos personalizados",
-    "globos personalizados san mateo atenco",
-    "globos personalizados metepec",
-    "globos personalizados toluca",
-    "globos personalizados lerma",
+    "flores personalizados",
+    "flores personalizados san mateo atenco",
+    "flores personalizados metepec",
+    "flores personalizados toluca",
+    "flores personalizados lerma",
 
     // Globo burbuja
-    "globos burbuja",
-    "globos burbuja personalizados",
-    "globos burbuja san mateo atenco",
-    "globos burbuja metepec",
-    "globos burbuja toluca",
+    "globos de helio personalizados",
+    "globos de helio san mateo atenco",
+    "globos de helio metepec",
+    "globos de helio toluca",
 
     // Regalos
-    "regalos personalizados",
-    "regalos con globos",
-    "arreglos con globos",
-    "arreglos para graduacion",
-    "arreglos cumpleaños",
-    "arreglos con dulces",
-    "arreglos con peluches",
+    "flores personalizados",
+    "flores con globos",
+    "flores con globos",
+    "flores para graduacion",
+    "flores cumpleaños",
+    "flores con dulces",
+    "flores con peluches",
 
     // Eventos
-    "globos para cumpleaños",
-    "globos para graduación",
-    "globos para aniversario",
-    "globos para baby shower",
-    "globos para xv años",
-    "globos para san valentin",
-    "globos para dia de las madres",
+    "flores para cumpleaños",
+    "flores para graduación",
+    "flores para aniversario",
+    "flores para baby shower",
+    "flores para xv años",
+    "flores para san valentin",
+    "flores para dia de las madres",
 
     // Decoración
-    "decoracion con globos",
-    "decoracion de eventos",
-    "decoracion para fiestas",
+    "decoracion con flores",
 
     // Local SEO
-    "globos en san mateo atenco",
-    "globos en metepec",
-    "globos en toluca",
-    "globos en lerma",
-    "globos cerca de mi",
-    "tienda de globos",
-    "tienda de globos san mateo atenco",
+    "flores en san mateo atenco",
+    "flores en metepec",
+    "flores en toluca",
+    "flores en lerma",
+    "flores cerca de mi",
+    "tienda de flores",
+    "tienda de flores san mateo atenco",
     "tienda de regalos san mateo atenco",
 
     // Conversión
-    "pedir globos por whatsapp",
-    "globos personalizados whatsapp",
-    "envio de globos",
-    "entrega de globos a domicilio",
-    "globos a domicilio",
+    "pedir flores por whatsapp",
+    "flores personalizadas whatsapp",
+    "envio de flores",
+    "entrega de flores a domicilio",
+    "flores a domicilio",
     "regalos a domicilio",
 
     // Marca

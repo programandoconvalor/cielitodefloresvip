@@ -198,7 +198,7 @@ export default function CatalogHeader({
 
   return (
     <header
-      className="sticky top-0 z-40 border-b border-[#5a4520] bg-[#050505] backdrop-blur-sm"
+      className="sticky top-0 z-40 bg-[#050505] backdrop-blur-sm"
       style={{ boxShadow: "0 6px 18px rgba(0,0,0,0.6)" }}
     >
       <div className="mx-auto flex max-w-[1460px] items-center justify-between gap-2 px-4 py-3 md:gap-4 md:px-10 md:py-7">
@@ -247,7 +247,7 @@ export default function CatalogHeader({
               className="font-serif text-[#fbf6eb]"
               style={{ fontSize: "clamp(1.25rem, 5vw, 1.25rem)" }}
             >
-              Colección VIP
+              Colecciones VIP
             </h5>
 
             <div className="mt-2 h-0.5 w-14 rounded bg-[#6a5221] md:mt-3" />

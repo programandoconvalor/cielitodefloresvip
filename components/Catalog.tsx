@@ -6,7 +6,7 @@
  * Purpose: Main product catalog view with synchronized search, suggestions, and responsive product cards.
  */
 
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import {
   CatalogHeader,
   CatalogSearch,
@@ -89,6 +89,7 @@ export default function Catalog({ visible }: CatalogProps) {
   const suggestionsShowCategories = searchConfig?.suggestions?.showCategories ?? true;
   const showPriceOnCards = siteData.catalogUi.showPriceOnCards ?? true;
   const [filter, setFilter] = useState("all");
+  const previousFilterRef = useRef(filter);
   const [search, setSearch] = useState("");
   const [searchScope, setSearchScope] = useState<"context" | "global">(defaultSearchScope);
   const [mobileIndicatorLabel, setMobileIndicatorLabel] = useState(defaultMobileSubcategoryLabel);
@@ -106,10 +107,14 @@ export default function Catalog({ visible }: CatalogProps) {
   const [focusedInput, setFocusedInput] = useState<"web" | "mobile" | null>(null);
   const debounceRef = useRef<ReturnType<typeof setTimeout> | null>(null);
   const [imagePreview, setImagePreview] = useState<ImagePreviewState | null>(null);
+  const scrollPositionRef = useRef(0);
+  const previewHistoryEntryRef = useRef(false);
+  const catalogGridRef = useRef<HTMLDivElement | null>(null);
   const previewTouchStartX = useRef(0);
   const previewTouchStartY = useRef(0);
   const previewSheetRef = useRef<HTMLDivElement | null>(null);
   const previewSizeOptionsRef = useRef<HTMLDivElement | null>(null);
+  const isImagePreviewOpen = imagePreview !== null;
 
   // Single, authoritative initial scroll-to-top on mount.
   useEffect(() => {
@@ -172,6 +177,28 @@ export default function Catalog({ visible }: CatalogProps) {
   const filteredByCategory = catalogProducts.filter((p) =>
     selectedCategory.productCategoryIds.includes(p.categoryId)
   );
+
+  useLayoutEffect(() => {
+    if (previousFilterRef.current === filter) {
+      return;
+    }
+
+    previousFilterRef.current = filter;
+    const catalogGrid = catalogGridRef.current;
+    if (!catalogGrid) {
+      return;
+    }
+
+    const catalogHeaderHeight =
+      document.querySelector<HTMLElement>("#catalogo header")?.offsetHeight ?? 0;
+    window.scrollTo({
+      top: Math.max(
+        0,
+        window.scrollY + catalogGrid.getBoundingClientRect().top - catalogHeaderHeight,
+      ),
+      behavior: "instant",
+    });
+  }, [filter]);
 
   const normalizeText = (value: string) =>
     value
@@ -433,10 +460,25 @@ export default function Catalog({ visible }: CatalogProps) {
     }
 
     const boundedIndex = Math.max(0, Math.min(index, images.length - 1));
+    scrollPositionRef.current = window.scrollY;
+    if (!previewHistoryEntryRef.current) {
+      const currentHistoryState = window.history.state;
+      const previewHistoryState = currentHistoryState && typeof currentHistoryState === "object"
+        ? { ...currentHistoryState, __catalogImagePreview: true }
+        : { __catalogImagePreview: true, previousState: currentHistoryState };
+      window.history.pushState(previewHistoryState, "", window.location.href);
+      previewHistoryEntryRef.current = true;
+    }
     setImagePreview({ ...payload, index: boundedIndex });
   };
 
   const closeImagePreview = () => {
+    if (previewHistoryEntryRef.current) {
+      previewHistoryEntryRef.current = false;
+      if (window.history.state?.__catalogImagePreview === true) {
+        window.history.back();
+      }
+    }
     setImagePreview(null);
   };
 
@@ -515,7 +557,7 @@ export default function Catalog({ visible }: CatalogProps) {
   // NOTE: initial scroll-to-top is handled by the mount-only effect above.
 
   useEffect(() => {
-    if (!imagePreview) {
+    if (!isImagePreviewOpen) {
       return;
     }
 
@@ -524,14 +566,52 @@ export default function Catalog({ visible }: CatalogProps) {
     const originalPosition = document.body.style.position;
     const originalTop = document.body.style.top;
     const originalWidth = document.body.style.width;
-    const scrollY = typeof window !== "undefined" ? window.scrollY : 0;
 
     // Lock background scrolling without changing layout: set overflow hidden
     // and keep the page at the same visual position by fixing top.
     document.body.style.overflow = "hidden";
     document.body.style.position = "fixed";
-    document.body.style.top = `-${scrollY}px`;
+    document.body.style.top = `-${scrollPositionRef.current}px`;
     document.body.style.width = "100%";
+
+    return () => {
+      document.body.style.overflow = originalOverflow;
+      document.body.style.position = originalPosition;
+      document.body.style.top = originalTop;
+      document.body.style.width = originalWidth;
+
+      const scrollPosition = scrollPositionRef.current;
+      window.requestAnimationFrame(() => {
+        window.scrollTo({
+          top: scrollPosition,
+          behavior: "auto",
+        });
+      });
+    };
+  }, [isImagePreviewOpen]);
+
+  useEffect(() => {
+    if (!isImagePreviewOpen) {
+      return;
+    }
+
+    const onPopState = () => {
+      if (!previewHistoryEntryRef.current) {
+        return;
+      }
+
+      previewHistoryEntryRef.current = false;
+      setImagePreview(null);
+    };
+
+    window.addEventListener("popstate", onPopState);
+    return () => window.removeEventListener("popstate", onPopState);
+  }, [isImagePreviewOpen]);
+
+  useEffect(() => {
+    if (!imagePreview) {
+      return;
+    }
 
     const onKeyDown = (event: KeyboardEvent) => {
       if (event.key === "Escape") {
@@ -552,19 +632,6 @@ export default function Catalog({ visible }: CatalogProps) {
     window.addEventListener("keydown", onKeyDown);
 
     return () => {
-      // Restore body styles
-      document.body.style.overflow = originalOverflow;
-      document.body.style.position = originalPosition;
-      document.body.style.top = originalTop;
-      document.body.style.width = originalWidth;
-
-      // Restore scroll position
-      if (typeof window !== "undefined") {
-        const top = document.body.style.top;
-        const restored = top ? -parseInt(top || "0", 10) : 0;
-        window.scrollTo(0, restored || 0);
-      }
-
       window.removeEventListener("keydown", onKeyDown);
     };
   }, [imagePreview]);
@@ -643,13 +710,31 @@ export default function Catalog({ visible }: CatalogProps) {
         return;
       }
 
-      setMobileIndicatorLabel(savedMenuSelection.label);
-      setSelectedMenuSubcategory(savedMenuSelection.label);
-      setSelectedMenuGroupId(savedMenuSelection.groupId ?? null);
+      const savedGroupId = savedMenuSelection.groupId ?? null;
+      const savedSelectionHasProducts = catalogProducts.some((product) =>
+        product.menuAssignments.some((assignment) =>
+          assignment.subcategory === savedMenuSelection.label &&
+          (!savedGroupId || assignment.groupId === savedGroupId)
+        )
+      );
+
+      if (savedSelectionHasProducts) {
+        setMobileIndicatorLabel(savedMenuSelection.label);
+        setSelectedMenuSubcategory(savedMenuSelection.label);
+        setSelectedMenuGroupId(savedGroupId);
+      } else {
+        setMobileIndicatorLabel(allCategoryLabel);
+        setSelectedMenuSubcategory(allCategoryLabel);
+        setSelectedMenuGroupId(null);
+        window.localStorage.setItem(
+          catalogMenuSelectionStorageKey,
+          JSON.stringify({ label: allCategoryLabel, groupId: null }),
+        );
+      }
     } catch {
       // Ignore malformed persisted values.
     }
-  }, [allCategoryLabel]);
+  }, [allCategoryLabel, catalogProducts]);
 
   useEffect(() => {
     const onCatalogSearchChanged = (event: Event) => {
@@ -872,25 +957,14 @@ export default function Catalog({ visible }: CatalogProps) {
           }
         }}
       />
-      <div className="border-b border-[#5a4520] bg-[#050505]">
-        <div className="mx-auto max-w-[1460px] px-6 py-8 md:px-10 md:py-9">
-        </div>
-      </div>
 
       <div className="mx-auto w-full max-w-[1460px] px-3 md:px-6 lg:px-8">
 
         {/* MOBILE GRID ANCHOR - Scroll target used after external menu selections */}
         <div ref={mobileGridAnchorRef} className="h-0" />
 
-        <div
-          className="hidden md:block"
-          style={{ height: siteData.catalogUi.desktopMenuBottomSpacerHeight }}
-        />
-
-        <div className="hidden md:block h-5 lg:h-6" />
-
         {/* PRODUCT GRID - VIP large cards: image left, info right on desktop */}
-        <div className="grid grid-cols-1 gap-8 pt-2 md:grid-cols-1 md:pt-6 lg:grid-cols-1">
+        <div ref={catalogGridRef} className="grid grid-cols-1 gap-8 md:grid-cols-1 lg:grid-cols-1">
           <ProductGrid
             products={safeProducts as any}
             activeImageByCard={activeImageByCard}
@@ -952,7 +1026,7 @@ export default function Catalog({ visible }: CatalogProps) {
                 priceMxn={imagePreview.priceMxn}
                 selectedSizeLabel={imagePreview.selectedOptionLabel}
                 isOpen={true}
-                onClose={() => setImagePreview(null)}
+                onClose={closeImagePreview}
                 onPrev={() => setImagePreviewIndex(Math.max(0, imagePreview.index - 1))}
                 onNext={() => setImagePreviewIndex(Math.min(imagePreview.images.length - 1, imagePreview.index + 1))}
                 onChangeIndex={(i) => setImagePreviewIndex(i)}
@@ -964,5 +1038,3 @@ export default function Catalog({ visible }: CatalogProps) {
     </>
   );
 }
-
-

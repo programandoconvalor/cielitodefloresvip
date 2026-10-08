@@ -2,7 +2,7 @@ import type { SiteConfig } from "@/data/site/types";
 
 export const siteConfig: SiteConfig = {
   siteSlug: "cielitodeflores",
-  businessName: "Cielito de Flores",
+  businessName: "Cielito de Flores VIP",
   businessType: "Florería",
   slogan: "Diseños florales exclusivos para momentos inolvidables.",
   publicSiteUrl: "https://cielitodefloresvip.vercel.app",
