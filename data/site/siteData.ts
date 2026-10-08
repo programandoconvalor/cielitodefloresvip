@@ -906,8 +906,8 @@ export const siteData = {
     bottom: {
       enabled: true,
       showDeveloperLink: true,
-      copyrightPrefix: "Colección VIP",
-      developerLabel: "Desarrollado por Juan Carlos Zepeda IA",
+      copyrightPrefix: "Colecciones VIP",
+      developerLabel: "Desarrollado por Juan Carlos Zepeda",
       developerContact: {
         enabled: true,
         whatsappBase: "https://wa.me/5217227914217",
