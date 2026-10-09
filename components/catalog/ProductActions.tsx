@@ -18,7 +18,7 @@ export default function ProductActions({
     : "";
 
   const href = `https://wa.me/?text=${encodeURIComponent(
-    `Hola, quiero solicitar información sobre ${title} (${sku})${sizeText}`
+    `Hola, quiero solicitar información sobre ${title} (${sku})${sizeText}`,
   )}`;
 
   return (
@@ -26,38 +26,41 @@ export default function ProductActions({
       href={href}
       target="_blank"
       rel="noreferrer"
+      aria-label={`Solicitar información por WhatsApp sobre ${title}`}
       className="
         flex
         min-h-[46px]
         w-full
+        min-w-0
         items-center
         justify-center
         gap-2
         rounded-[10px]
-        px-3
+        border
+        border-[#C8A95B]/70
+        bg-gradient-to-b
+        from-[#8D001F]
+        to-[#700018]
+        px-2.5
         py-2.5
         text-center
+        text-[#F8F1E4]
+        shadow-[0_8px_24px_rgba(90,0,20,0.30),inset_0_1px_0_rgba(255,255,255,0.08)]
         transition-all
         duration-200
-        active:scale-[0.99]
         hover:brightness-110
-        sm:min-h-[56px]
-        sm:gap-3
+        active:scale-[0.99]
+        sm:min-h-[52px]
+        sm:gap-2.5
         sm:rounded-[13px]
-        sm:px-5
+        sm:px-4
         sm:py-3
       "
       style={{
-        background:
-          "linear-gradient(180deg, #8D001F 0%, #700018 100%)",
-        border:
-          "1px solid rgba(190,25,48,0.9)",
-        color: "#F8F1E4",
-        boxShadow:
-          "0 8px 24px rgba(90,0,20,0.35), inset 0 1px 0 rgba(255,255,255,0.08)",
+        fontFamily: "inherit",
       }}
     >
-      <span className="flex-shrink-0 flex items-center justify-center" style={{width:18, height:18, flexShrink:0}}>
+      <span className="flex h-[18px] w-[18px] shrink-0 items-center justify-center">
         <svg
           width="18"
           height="18"
@@ -65,8 +68,7 @@ export default function ProductActions({
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
           aria-hidden="true"
-          preserveAspectRatio="xMidYMid meet"
-          style={{display: 'block', overflow: 'visible'}}
+          className="block shrink-0"
         >
           <path
             d="M20.52 3.48A11.9 11.9 0 0012 0C5.373 0 .001 5.373.001 12.003 0 14.046.545 16 1.57 17.65L0 24l6.53-1.56A11.938 11.938 0 0012 24c6.627 0 12-5.373 12-12 0-2.97-1.03-5.72-2.48-8.52z"
@@ -75,9 +77,8 @@ export default function ProductActions({
             strokeLinecap="round"
             strokeLinejoin="round"
           />
-
           <path
-            d="M7.5 6.9c.3-.3.7-.3 1-.1l1.4 1.1c.3.2.4.6.2.9l-.6.9c.8 1.4 1.9 2.5 3.3 3.3l.9-.6c.3-.2.7-.1.9.2l1.1 1.4c.2.3.2.7-.1 1-0.7.7-1.8 1-2.7.7-3.1-1-5.8-3.7-6.8-6.8-.3-.9 0-2 .7-2.7z"
+            d="M7.5 6.9c.3-.3.7-.3 1-.1l1.4 1.1c.3.2.4.6.2.9l-.6.9c.8 1.4 1.9 2.5 3.3 3.3l.9-.6c.3-.2.7-.1.9.2l1.1 1.4c.2.3.2.7-.1 1-.7.7-1.8 1-2.7.7-3.1-1-5.8-3.7-6.8-6.8-.3-.9 0-2 .7-2.7z"
             stroke="#F2D99A"
             strokeWidth="1.1"
             strokeLinecap="round"
@@ -88,16 +89,18 @@ export default function ProductActions({
 
       <span
         className="
-          whitespace-nowrap
-          text-[8px]
-          font-semibold
+          min-w-0
+          whitespace-normal
+          text-[9px]
+          font-bold
           uppercase
-          tracking-[0.09em]
-          sm:text-sm
-          sm:tracking-[0.12em]
+          leading-tight
+          tracking-[0.04em]
+          sm:text-[11px]
+          sm:tracking-[0.08em]
         "
       >
-        Solicitar información
+        PEDIR POR WHATSAPP
       </span>
     </a>
   );

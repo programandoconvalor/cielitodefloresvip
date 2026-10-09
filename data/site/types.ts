@@ -116,13 +116,20 @@ export type CatalogProduct = {
   categoryId: string;
   titleTemplate?: string;
   baseTitle: string;
+  subtitle?: string;
+  badgeLabel?: string;
   defaultVariantId?: ProductVariantId;
   basePriceMxn: number;
   defaultImages: string[];
   activeSizeOptions: ProductSizeOption[];
+  productSizes?: ProductSelectableSize[];
   colorDots: string[];
   badge: BadgeType | "";
   deliveryMessage?: string;
+  description?: string;
+  includes?: string[];
+  deliveryZones?: string[];
+  isAvailable?: boolean;
   sku: string;
   menuAssignments: ProductMenuAssignment[];
   ui: {
@@ -130,8 +137,10 @@ export type CatalogProduct = {
     showDeliveryDate: boolean;
     showColorDots: boolean;
     showProductSizes?: boolean;
+    showStandard?: boolean;
+    showPremium?: boolean;
+    showLuxury?: boolean;
   };
-  productSizes?: ProductSelectableSize[];
 };
 
 export type SiteCatalogModule = {
