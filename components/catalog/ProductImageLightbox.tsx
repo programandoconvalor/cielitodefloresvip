@@ -402,7 +402,7 @@ export default function ProductImageLightbox({
                 "
               >
                 <WhatsAppIcon />
-                Solicitar por WhatsApp
+                PEDIR POR WHATSAPP
               </a>
             ) : (
               <button

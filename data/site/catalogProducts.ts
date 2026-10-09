@@ -144,6 +144,8 @@ export const catalogProducts: CatalogProduct[] = [
     basePriceMxn: 1250,
     defaultImages: [
       "/images/tenants/cielitodeflores/catalog/cielitodeflores_1.jpg",
+      "/images/tenants/cielitodeflores/catalog/cielitodeflores_2.jpg",
+      "/images/tenants/cielitodeflores/catalog/cielitodeflores_3.jpg",
     ],
     activeSizeOptions: [],
     productSizes: [
