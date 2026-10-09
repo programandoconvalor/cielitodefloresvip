@@ -129,7 +129,7 @@ export const catalogProducts: CatalogProduct[] = [
     subtitle: "100 ROSAS ROJAS + GIPSOFILA PREMIUM",
     description: "Royal Red: arreglo floral premium elaborado con 100 rosas rojas + gipsofila premium. Su presentación elegante lo convierte en un regalo especial para cumpleaños, aniversarios, celebraciones y momentos inolvidables.",
     includes: [
-      "Decoración, moño y envoltura similares a la imagen",
+      "Decoración  y diseño similares a la imagen",
       "Tarjeta para escribir dedicatoria",
       "Garantía de entrega segura",
     ],
@@ -193,7 +193,7 @@ export const catalogProducts: CatalogProduct[] = [
     subtitle: "100 ROSAS ROJAS + 30 FERRERO",
     description: "Scarlet Heart: arreglo floral premium elaborado con 100 rosas rojas + 30 ferrero. Su presentación elegante lo convierte en un regalo especial para cumpleaños, aniversarios, celebraciones y momentos inolvidables.",
     includes: [
-      "Decoración, moño y envoltura similares a la imagen",
+      "Decoración  y diseño similares a la imagen",
       "Tarjeta para escribir dedicatoria",
       "Garantía de entrega segura",
     ],
@@ -257,7 +257,7 @@ export const catalogProducts: CatalogProduct[] = [
     subtitle: "100 GERBERAS PREMIUM",
     description: "Colorful Garden: arreglo floral premium elaborado con 100 gerberas premium. Su presentación elegante lo convierte en un regalo especial para cumpleaños, aniversarios, celebraciones y momentos inolvidables.",
     includes: [
-      "Decoración, moño y envoltura similares a la imagen",
+      "Decoración  y diseño similares a la imagen",
       "Tarjeta para escribir dedicatoria",
       "Garantía de entrega segura",
     ],
@@ -321,7 +321,7 @@ export const catalogProducts: CatalogProduct[] = [
     subtitle: "100 ROSAS PREMIUM + PELUCHE",
     description: "Happy Birthday: arreglo floral premium elaborado con 100 rosas premium + peluche. Su presentación elegante lo convierte en un regalo especial para cumpleaños, aniversarios, celebraciones y momentos inolvidables.",
     includes: [
-      "Decoración, moño y envoltura similares a la imagen",
+      "Decoración  y diseño similares a la imagen",
       "Tarjeta para escribir dedicatoria",
       "Garantía de entrega segura",
     ],
@@ -385,7 +385,7 @@ export const catalogProducts: CatalogProduct[] = [
     subtitle: "200 ROSAS + CORONA",
     description: "Queen’s Heart: arreglo floral premium elaborado con 200 rosas + corona. Su presentación elegante lo convierte en un regalo especial para cumpleaños, aniversarios, celebraciones y momentos inolvidables.",
     includes: [
-      "Decoración, moño y envoltura similares a la imagen",
+      "Decoración  y diseño similares a la imagen",
       "Tarjeta para escribir dedicatoria",
       "Garantía de entrega segura",
     ],
@@ -449,7 +449,7 @@ export const catalogProducts: CatalogProduct[] = [
     subtitle: "100 ROSAS COLOR PREMIUM",
     description: "Bouquet of Roses: arreglo floral premium elaborado con 100 rosas color premium. Su presentación elegante lo convierte en un regalo especial para cumpleaños, aniversarios, celebraciones y momentos inolvidables.",
     includes: [
-      "Decoración, moño y envoltura similares a la imagen",
+      "Decoración  y diseño similares a la imagen",
       "Tarjeta para escribir dedicatoria",
       "Garantía de entrega segura",
     ],
@@ -513,7 +513,7 @@ export const catalogProducts: CatalogProduct[] = [
     subtitle: "30 GIRASOLES + CORONA PREMIUM",
     description: "Golden Sun: arreglo floral premium elaborado con 30 girasoles + corona premium. Su presentación elegante lo convierte en un regalo especial para cumpleaños, aniversarios, celebraciones y momentos inolvidables.",
     includes: [
-      "Decoración, moño y envoltura similares a la imagen",
+      "Decoración  y diseño similares a la imagen",
       "Tarjeta para escribir dedicatoria",
       "Garantía de entrega segura",
     ],
@@ -577,7 +577,7 @@ export const catalogProducts: CatalogProduct[] = [
     subtitle: "50 GERBERAS ROSAS PREMIUM",
     description: "Pink Royal: arreglo floral premium elaborado con 50 gerberas rosas premium. Su presentación elegante lo convierte en un regalo especial para cumpleaños, aniversarios, celebraciones y momentos inolvidables.",
     includes: [
-      "Decoración, moño y envoltura similares a la imagen",
+      "Decoración  y diseño similares a la imagen",
       "Tarjeta para escribir dedicatoria",
       "Garantía de entrega segura",
     ],
@@ -641,7 +641,7 @@ export const catalogProducts: CatalogProduct[] = [
     subtitle: "100 ROSAS PREMIUM + 20 BILLETES (DE 100 MXN C/U)",
     description: "Ruby Crown: arreglo floral premium elaborado con 100 rosas premium + 20 billetes (de 100 mxn c/u). Su presentación elegante lo convierte en un regalo especial para cumpleaños, aniversarios, celebraciones y momentos inolvidables.",
     includes: [
-      "Decoración, moño y envoltura similares a la imagen",
+      "Decoración  y diseño similares a la imagen",
       "Tarjeta para escribir dedicatoria",
       "Garantía de entrega segura",
     ],
@@ -705,7 +705,7 @@ export const catalogProducts: CatalogProduct[] = [
     subtitle: "15 GIRASOLES + 30 ROSAS PREMIUM",
     description: "Spring Bouquet: arreglo floral premium elaborado con 15 girasoles + 30 rosas premium. Su presentación elegante lo convierte en un regalo especial para cumpleaños, aniversarios, celebraciones y momentos inolvidables.",
     includes: [
-      "Decoración, moño y envoltura similares a la imagen",
+      "Decoración  y diseño similares a la imagen",
       "Tarjeta para escribir dedicatoria",
       "Garantía de entrega segura",
     ],
@@ -769,7 +769,7 @@ export const catalogProducts: CatalogProduct[] = [
     subtitle: "250 ROSAS PREMIUM",
     description: "Blush Garden: arreglo floral premium elaborado con 250 rosas premium. Su presentación elegante lo convierte en un regalo especial para cumpleaños, aniversarios, celebraciones y momentos inolvidables.",
     includes: [
-      "Decoración, moño y envoltura similares a la imagen",
+      "Decoración  y diseño similares a la imagen",
       "Tarjeta para escribir dedicatoria",
       "Garantía de entrega segura",
     ],
@@ -833,7 +833,7 @@ export const catalogProducts: CatalogProduct[] = [
     subtitle: "100 ROSAS PREMIUM",
     description: "Classic Heart Red: arreglo floral premium elaborado con 100 rosas premium. Su presentación elegante lo convierte en un regalo especial para cumpleaños, aniversarios, celebraciones y momentos inolvidables.",
     includes: [
-      "Decoración, moño y envoltura similares a la imagen",
+      "Decoración  y diseño similares a la imagen",
       "Tarjeta para escribir dedicatoria",
       "Garantía de entrega segura",
     ],
@@ -897,7 +897,7 @@ export const catalogProducts: CatalogProduct[] = [
     subtitle: "150 ROSAS PREMIUM",
     description: "Heart Royale: arreglo floral premium elaborado con 150 rosas premium. Su presentación elegante lo convierte en un regalo especial para cumpleaños, aniversarios, celebraciones y momentos inolvidables.",
     includes: [
-      "Decoración, moño y envoltura similares a la imagen",
+      "Decoración  y diseño similares a la imagen",
       "Tarjeta para escribir dedicatoria",
       "Garantía de entrega segura",
     ],
@@ -961,7 +961,7 @@ export const catalogProducts: CatalogProduct[] = [
     subtitle: "36 GERBERAS PREMIUM",
     description: "Color Royale: arreglo floral premium elaborado con 36 gerberas premium. Su presentación elegante lo convierte en un regalo especial para cumpleaños, aniversarios, celebraciones y momentos inolvidables.",
     includes: [
-      "Decoración, moño y envoltura similares a la imagen",
+      "Decoración  y diseño similares a la imagen",
       "Tarjeta para escribir dedicatoria",
       "Garantía de entrega segura",
     ],
@@ -1025,7 +1025,7 @@ export const catalogProducts: CatalogProduct[] = [
     subtitle: "200 ROSAS + CORONA",
     description: "Royal Proposal: arreglo floral premium elaborado con 200 rosas + corona. Su presentación elegante lo convierte en un regalo especial para cumpleaños, aniversarios, celebraciones y momentos inolvidables.",
     includes: [
-      "Decoración, moño y envoltura similares a la imagen",
+      "Decoración  y diseño similares a la imagen",
       "Tarjeta para escribir dedicatoria",
       "Garantía de entrega segura",
     ],
@@ -1089,7 +1089,7 @@ export const catalogProducts: CatalogProduct[] = [
     subtitle: "25 GERBERAS + LIRIOS",
     description: "Grand Garden: arreglo floral premium elaborado con 25 gerberas + lirios. Su presentación elegante lo convierte en un regalo especial para cumpleaños, aniversarios, celebraciones y momentos inolvidables.",
     includes: [
-      "Decoración, moño y envoltura similares a la imagen",
+      "Decoración  y diseño similares a la imagen",
       "Tarjeta para escribir dedicatoria",
       "Garantía de entrega segura",
     ],
@@ -1153,7 +1153,7 @@ export const catalogProducts: CatalogProduct[] = [
     subtitle: "20 GERBERAS + GIRASOLES + PELUCHE",
     description: "Sunset Garden: arreglo floral premium elaborado con 20 gerberas + girasoles + peluche. Su presentación elegante lo convierte en un regalo especial para cumpleaños, aniversarios, celebraciones y momentos inolvidables.",
     includes: [
-      "Decoración, moño y envoltura similares a la imagen",
+      "Decoración  y diseño similares a la imagen",
       "Tarjeta para escribir dedicatoria",
       "Garantía de entrega segura",
     ],
@@ -1217,7 +1217,7 @@ export const catalogProducts: CatalogProduct[] = [
     subtitle: "ROSAS + LIRIOS + GERBERAS ",
     description: "Pink Celebration: arreglo floral premium elaborado con rosas + lirios + gerberas. Su presentación elegante lo convierte en un regalo especial para cumpleaños, aniversarios, celebraciones y momentos inolvidables.",
     includes: [
-      "Decoración, moño y envoltura similares a la imagen",
+      "Decoración  y diseño similares a la imagen",
       "Tarjeta para escribir dedicatoria",
       "Garantía de entrega segura",
     ],
@@ -1281,7 +1281,7 @@ export const catalogProducts: CatalogProduct[] = [
     subtitle: "40 GERBERAS PREMIUM",
     description: "Royal Mix: arreglo floral premium elaborado con 40 gerberas premium. Su presentación elegante lo convierte en un regalo especial para cumpleaños, aniversarios, celebraciones y momentos inolvidables.",
     includes: [
-      "Decoración, moño y envoltura similares a la imagen",
+      "Decoración  y diseño similares a la imagen",
       "Tarjeta para escribir dedicatoria",
       "Garantía de entrega segura",
     ],
@@ -1345,7 +1345,7 @@ export const catalogProducts: CatalogProduct[] = [
     subtitle: "250 ROSAS ROJAS PREMIUM",
     description: "Red Elegance: arreglo floral premium elaborado con 250 rosas rojas premium. Su presentación elegante lo convierte en un regalo especial para cumpleaños, aniversarios, celebraciones y momentos inolvidables.",
     includes: [
-      "Decoración, moño y envoltura similares a la imagen",
+      "Decoración  y diseño similares a la imagen",
       "Tarjeta para escribir dedicatoria",
       "Garantía de entrega segura",
     ],
@@ -1409,7 +1409,7 @@ export const catalogProducts: CatalogProduct[] = [
     subtitle: "100 ROSAS + GYPSOPHILA PREMIUM",
     description: "Ruby Deluxe: arreglo floral premium elaborado con 100 rosas + gypsophila premium. Su presentación elegante lo convierte en un regalo especial para cumpleaños, aniversarios, celebraciones y momentos inolvidables.",
     includes: [
-      "Decoración, moño y envoltura similares a la imagen",
+      "Decoración  y diseño similares a la imagen",
       "Tarjeta para escribir dedicatoria",
       "Garantía de entrega segura",
     ],
@@ -1473,7 +1473,7 @@ export const catalogProducts: CatalogProduct[] = [
     subtitle: "GERBERAS + LIRIOS + ROSAS BLUE",
     description: "Blue & Gold: arreglo floral premium elaborado con gerberas + lirios + rosas blue. Su presentación elegante lo convierte en un regalo especial para cumpleaños, aniversarios, celebraciones y momentos inolvidables.",
     includes: [
-      "Decoración, moño y envoltura similares a la imagen",
+      "Decoración  y diseño similares a la imagen",
       "Tarjeta para escribir dedicatoria",
       "Garantía de entrega segura",
     ],
@@ -1537,7 +1537,7 @@ export const catalogProducts: CatalogProduct[] = [
     subtitle: "30 ROSAS + 30 GIRASOLES PREMIUM",
     description: "Sunset Mix: arreglo floral premium elaborado con 30 rosas + 30 girasoles premium. Su presentación elegante lo convierte en un regalo especial para cumpleaños, aniversarios, celebraciones y momentos inolvidables.",
     includes: [
-      "Decoración, moño y envoltura similares a la imagen",
+      "Decoración  y diseño similares a la imagen",
       "Tarjeta para escribir dedicatoria",
       "Garantía de entrega segura",
     ],
@@ -1601,7 +1601,7 @@ export const catalogProducts: CatalogProduct[] = [
     subtitle: "50 ROSAS PREMIUM",
     description: "Scarlet Luxe: arreglo floral premium elaborado con 50 rosas premium. Su presentación elegante lo convierte en un regalo especial para cumpleaños, aniversarios, celebraciones y momentos inolvidables.",
     includes: [
-      "Decoración, moño y envoltura similares a la imagen",
+      "Decoración  y diseño similares a la imagen",
       "Tarjeta para escribir dedicatoria",
       "Garantía de entrega segura",
     ],
@@ -1665,7 +1665,7 @@ export const catalogProducts: CatalogProduct[] = [
     subtitle: "25 GERBERAS ROJAS",
     description: "Heart Red Gerberas: arreglo floral premium elaborado con 25 gerberas rojas. Su presentación elegante lo convierte en un regalo especial para cumpleaños, aniversarios, celebraciones y momentos inolvidables.",
     includes: [
-      "Decoración, moño y envoltura similares a la imagen",
+      "Decoración  y diseño similares a la imagen",
       "Tarjeta para escribir dedicatoria",
       "Garantía de entrega segura",
     ],
@@ -1729,7 +1729,7 @@ export const catalogProducts: CatalogProduct[] = [
     subtitle: "150 ROSAS + GIPSOFILA +  CORONA  PREMIUM",
     description: "Golden Ruby: arreglo floral premium elaborado con 150 rosas + gipsofila +  corona  premium. Su presentación elegante lo convierte en un regalo especial para cumpleaños, aniversarios, celebraciones y momentos inolvidables.",
     includes: [
-      "Decoración, moño y envoltura similares a la imagen",
+      "Decoración  y diseño similares a la imagen",
       "Tarjeta para escribir dedicatoria",
       "Garantía de entrega segura",
     ],
@@ -1793,7 +1793,7 @@ export const catalogProducts: CatalogProduct[] = [
     subtitle: "25 GERBERAS BLANCAS + GIPSOFILA + 25 ROSAS PREMIUM",
     description: "White Garden: arreglo floral premium elaborado con 25 gerberas blancas + gipsofila + 25 rosas premium. Su presentación elegante lo convierte en un regalo especial para cumpleaños, aniversarios, celebraciones y momentos inolvidables.",
     includes: [
-      "Decoración, moño y envoltura similares a la imagen",
+      "Decoración  y diseño similares a la imagen",
       "Tarjeta para escribir dedicatoria",
       "Garantía de entrega segura",
     ],
@@ -1857,7 +1857,7 @@ export const catalogProducts: CatalogProduct[] = [
     subtitle: "100 ROSAS + FERRERO + PELUCHE + GIPSOFILA",
     description: "Royal Teddy: arreglo floral premium elaborado con 100 rosas + ferrero + peluche + gipsofila. Su presentación elegante lo convierte en un regalo especial para cumpleaños, aniversarios, celebraciones y momentos inolvidables.",
     includes: [
-      "Decoración, moño y envoltura similares a la imagen",
+      "Decoración  y diseño similares a la imagen",
       "Tarjeta para escribir dedicatoria",
       "Garantía de entrega segura",
     ],
@@ -1921,7 +1921,7 @@ export const catalogProducts: CatalogProduct[] = [
     subtitle: "150 ROSAS + GIPSOFILA ROSA PREMIUM",
     description: "Roses: arreglo floral premium elaborado con 150 rosas + gipsofila rosa premium. Su presentación elegante lo convierte en un regalo especial para cumpleaños, aniversarios, celebraciones y momentos inolvidables.",
     includes: [
-      "Decoración, moño y envoltura similares a la imagen",
+      "Decoración  y diseño similares a la imagen",
       "Tarjeta para escribir dedicatoria",
       "Garantía de entrega segura",
     ],
@@ -1985,7 +1985,7 @@ export const catalogProducts: CatalogProduct[] = [
     subtitle: "30 GERBERAS ROSAS + PERRITOS PREMIUM",
     description: "Pink Gerbera: arreglo floral premium elaborado con 30 gerberas rosas + perritos premium. Su presentación elegante lo convierte en un regalo especial para cumpleaños, aniversarios, celebraciones y momentos inolvidables.",
     includes: [
-      "Decoración, moño y envoltura similares a la imagen",
+      "Decoración  y diseño similares a la imagen",
       "Tarjeta para escribir dedicatoria",
       "Garantía de entrega segura",
     ],
@@ -2049,7 +2049,7 @@ export const catalogProducts: CatalogProduct[] = [
     subtitle: "100 ROSAS BLANCAS PREMIUM",
     description: "White Elegance: arreglo floral premium elaborado con 100 rosas blancas premium. Su presentación elegante lo convierte en un regalo especial para cumpleaños, aniversarios, celebraciones y momentos inolvidables.",
     includes: [
-      "Decoración, moño y envoltura similares a la imagen",
+      "Decoración  y diseño similares a la imagen",
       "Tarjeta para escribir dedicatoria",
       "Garantía de entrega segura",
     ],
@@ -2113,7 +2113,7 @@ export const catalogProducts: CatalogProduct[] = [
     subtitle: "20 GIRASOLES MINI PREMIUM",
     description: "Golden Bouquet: arreglo floral premium elaborado con 20 girasoles mini premium. Su presentación elegante lo convierte en un regalo especial para cumpleaños, aniversarios, celebraciones y momentos inolvidables.",
     includes: [
-      "Decoración, moño y envoltura similares a la imagen",
+      "Decoración  y diseño similares a la imagen",
       "Tarjeta para escribir dedicatoria",
       "Garantía de entrega segura",
     ],
@@ -2177,7 +2177,7 @@ export const catalogProducts: CatalogProduct[] = [
     subtitle: "100 ROSAS + LIRIOS ROSAS",
     description: "Pink Royale: arreglo floral premium elaborado con 100 rosas + lirios rosas. Su presentación elegante lo convierte en un regalo especial para cumpleaños, aniversarios, celebraciones y momentos inolvidables.",
     includes: [
-      "Decoración, moño y envoltura similares a la imagen",
+      "Decoración  y diseño similares a la imagen",
       "Tarjeta para escribir dedicatoria",
       "Garantía de entrega segura",
     ],
@@ -2241,7 +2241,7 @@ export const catalogProducts: CatalogProduct[] = [
     subtitle: "75 ROSAS ROJAS PREMIUM",
     description: "Red Romance: arreglo floral premium elaborado con 75 rosas rojas premium. Su presentación elegante lo convierte en un regalo especial para cumpleaños, aniversarios, celebraciones y momentos inolvidables.",
     includes: [
-      "Decoración, moño y envoltura similares a la imagen",
+      "Decoración  y diseño similares a la imagen",
       "Tarjeta para escribir dedicatoria",
       "Garantía de entrega segura",
     ],
@@ -2305,7 +2305,7 @@ export const catalogProducts: CatalogProduct[] = [
     subtitle: "7 GIRASOLES + STATE + PERLAS",
     description: "Golden Teddy: arreglo floral premium elaborado con 7 girasoles + state + perlas. Su presentación elegante lo convierte en un regalo especial para cumpleaños, aniversarios, celebraciones y momentos inolvidables.",
     includes: [
-      "Decoración, moño y envoltura similares a la imagen",
+      "Decoración  y diseño similares a la imagen",
       "Tarjeta para escribir dedicatoria",
       "Garantía de entrega segura",
     ],
@@ -2369,7 +2369,7 @@ export const catalogProducts: CatalogProduct[] = [
     subtitle: "30 GIRASOLES PREMIUM",
     description: "Sunflower Crown: arreglo floral premium elaborado con 30 girasoles premium. Su presentación elegante lo convierte en un regalo especial para cumpleaños, aniversarios, celebraciones y momentos inolvidables.",
     includes: [
-      "Decoración, moño y envoltura similares a la imagen",
+      "Decoración  y diseño similares a la imagen",
       "Tarjeta para escribir dedicatoria",
       "Garantía de entrega segura",
     ],
@@ -2433,7 +2433,7 @@ export const catalogProducts: CatalogProduct[] = [
     subtitle: "75 ROSAS PREMIUM",
     description: "Pink Garden: arreglo floral premium elaborado con 75 rosas premium. Su presentación elegante lo convierte en un regalo especial para cumpleaños, aniversarios, celebraciones y momentos inolvidables.",
     includes: [
-      "Decoración, moño y envoltura similares a la imagen",
+      "Decoración  y diseño similares a la imagen",
       "Tarjeta para escribir dedicatoria",
       "Garantía de entrega segura",
     ],
@@ -2497,7 +2497,7 @@ export const catalogProducts: CatalogProduct[] = [
     subtitle: "150 ROSAS + GIPSOFILA ROSA PREMIUM",
     description: "Sweet Celebration: arreglo floral premium elaborado con 150 rosas + gipsofila rosa premium. Su presentación elegante lo convierte en un regalo especial para cumpleaños, aniversarios, celebraciones y momentos inolvidables.",
     includes: [
-      "Decoración, moño y envoltura similares a la imagen",
+      "Decoración  y diseño similares a la imagen",
       "Tarjeta para escribir dedicatoria",
       "Garantía de entrega segura",
     ],
@@ -2561,7 +2561,7 @@ export const catalogProducts: CatalogProduct[] = [
     subtitle: "200 ROSAS + FERRERO + CORONA + LUZ LED",
     description: "Queen's Garden: arreglo floral premium elaborado con 200 rosas + ferrero + corona + luz led. Su presentación elegante lo convierte en un regalo especial para cumpleaños, aniversarios, celebraciones y momentos inolvidables.",
     includes: [
-      "Decoración, moño y envoltura similares a la imagen",
+      "Decoración  y diseño similares a la imagen",
       "Tarjeta para escribir dedicatoria",
       "Garantía de entrega segura",
     ],
@@ -2625,7 +2625,7 @@ export const catalogProducts: CatalogProduct[] = [
     subtitle: "50 GERBERAS DE COLORES PREMIUM",
     description: "Heart of Colors: arreglo floral premium elaborado con 50 gerberas de colores premium. Su presentación elegante lo convierte en un regalo especial para cumpleaños, aniversarios, celebraciones y momentos inolvidables.",
     includes: [
-      "Decoración, moño y envoltura similares a la imagen",
+      "Decoración  y diseño similares a la imagen",
       "Tarjeta para escribir dedicatoria",
       "Garantía de entrega segura",
     ],
@@ -2689,7 +2689,7 @@ export const catalogProducts: CatalogProduct[] = [
     subtitle: "300 ROSAS + 4 LETRAS",
     description: "Royal Love: arreglo floral premium elaborado con 300 rosas + 4 letras. Su presentación elegante lo convierte en un regalo especial para cumpleaños, aniversarios, celebraciones y momentos inolvidables.",
     includes: [
-      "Decoración, moño y envoltura similares a la imagen",
+      "Decoración  y diseño similares a la imagen",
       "Tarjeta para escribir dedicatoria",
       "Garantía de entrega segura",
     ],
@@ -2753,7 +2753,7 @@ export const catalogProducts: CatalogProduct[] = [
     subtitle: "50 ROSAS + PELUCHE + 5 GLOBOS HELIO",
     description: "Romance Royale: arreglo floral premium elaborado con 50 rosas + peluche + 5 globos helio. Su presentación elegante lo convierte en un regalo especial para cumpleaños, aniversarios, celebraciones y momentos inolvidables.",
     includes: [
-      "Decoración, moño y envoltura similares a la imagen",
+      "Decoración  y diseño similares a la imagen",
       "Tarjeta para escribir dedicatoria",
       "Garantía de entrega segura",
     ],
