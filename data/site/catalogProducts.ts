@@ -256,8 +256,8 @@ export const catalogProducts: CatalogProduct[] = [
     id: 1004,
     categoryId: "gerberas",
     baseTitle: "Colorful Garden",
-    subtitle: "100 GERBERAS PREMIUM",
-    description: "Colorful Garden: arreglo floral premium elaborado con 100 gerberas premium. Su presentación elegante lo convierte en un regalo especial para cumpleaños, aniversarios, celebraciones y momentos inolvidables.",
+    subtitle: "50 GERBERAS PREMIUM",
+    description: "Colorful Garden: arreglo floral premium elaborado con 50 gerberas premium. Su presentación elegante lo convierte en un regalo especial para cumpleaños, aniversarios, celebraciones y momentos inolvidables.",
     includes: [
       "Decoración  y diseño similares a la imagen",
       "Tarjeta para escribir dedicatoria",
