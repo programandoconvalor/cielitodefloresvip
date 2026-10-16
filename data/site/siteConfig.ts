@@ -22,10 +22,10 @@ export const siteConfig: SiteConfig = {
 }*/
 
   contact: {
-    whatsapp: "527225141995",
-    email: "contacto@cielitofloresvip.com",
+    whatsapp: "527223514694",
+    email: "pedidoscielitodeflores@gmail.com",
     maps: "https://maps.app.goo.gl/hxAiKa7BELqosF4g6",
-    phoneDisplay: "7225141995",
+    phoneDisplay: "7223514694",
     address:
       "Calle Morelos #144 Colonia Alvaro Obregón, CP 52105, San Mateo Atenco, Edo. Mex.",
   },

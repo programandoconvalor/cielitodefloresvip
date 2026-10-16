@@ -141,11 +141,9 @@ export const catalogProducts: CatalogProduct[] = [
     ],
     isAvailable: true,
     badgeLabel: "EXCLUSIVO",
-    basePriceMxn: 1250,
+    basePriceMxn: 1300,
     defaultImages: [
       "/images/tenants/cielitodeflores/catalog/cielitodeflores_1.jpg",
-      "/images/tenants/cielitodeflores/catalog/cielitodeflores_2.jpg",
-      "/images/tenants/cielitodeflores/catalog/cielitodeflores_3.jpg",
     ],
     activeSizeOptions: [],
     productSizes: [
@@ -207,7 +205,7 @@ export const catalogProducts: CatalogProduct[] = [
     ],
     isAvailable: true,
     badgeLabel: "EXCLUSIVO",
-    basePriceMxn: 1850,
+    basePriceMxn: 1800,
     defaultImages: [
       "/images/tenants/cielitodeflores/catalog/cielitodeflores_3.jpg",
     ],
@@ -271,7 +269,7 @@ export const catalogProducts: CatalogProduct[] = [
     ],
     isAvailable: true,
     badgeLabel: "EXCLUSIVO",
-    basePriceMxn: 1450,
+    basePriceMxn: 1400,
     defaultImages: [
       "/images/tenants/cielitodeflores/catalog/cielitodeflores_4.jpg",
     ],
@@ -335,7 +333,7 @@ export const catalogProducts: CatalogProduct[] = [
     ],
     isAvailable: true,
     badgeLabel: "EXCLUSIVO",
-    basePriceMxn: 1600,
+    basePriceMxn: 1550,
     defaultImages: [
       "/images/tenants/cielitodeflores/catalog/cielitodeflores_5.jpg",
     ],
@@ -463,7 +461,7 @@ export const catalogProducts: CatalogProduct[] = [
     ],
     isAvailable: true,
     badgeLabel: "EXCLUSIVO",
-    basePriceMxn: 1250,
+    basePriceMxn: 1300,
     defaultImages: [
       "/images/tenants/cielitodeflores/catalog/cielitodeflores_6.jpg",
     ],
@@ -527,7 +525,7 @@ export const catalogProducts: CatalogProduct[] = [
     ],
     isAvailable: true,
     badgeLabel: "EXCLUSIVO",
-    basePriceMxn: 1450,
+    basePriceMxn: 1400,
     defaultImages: [
       "/images/tenants/cielitodeflores/catalog/cielitodeflores_7.jpg",
     ],
@@ -591,7 +589,7 @@ export const catalogProducts: CatalogProduct[] = [
     ],
     isAvailable: true,
     badgeLabel: "EXCLUSIVO",
-    basePriceMxn: 1900,
+    basePriceMxn: 1800,
     defaultImages: [
       "/images/tenants/cielitodeflores/catalog/cielitodeflores_8.jpg",
     ],
@@ -655,7 +653,7 @@ export const catalogProducts: CatalogProduct[] = [
     ],
     isAvailable: true,
     badgeLabel: "EXCLUSIVO",
-    basePriceMxn: 3500,
+    basePriceMxn: 3300,
     defaultImages: [
       "/images/tenants/cielitodeflores/catalog/cielitodeflores_9.jpg",
     ],
@@ -783,7 +781,7 @@ export const catalogProducts: CatalogProduct[] = [
     ],
     isAvailable: true,
     badgeLabel: "EXCLUSIVO",
-    basePriceMxn: 2750,
+    basePriceMxn: 2700,
     defaultImages: [
       "/images/tenants/cielitodeflores/catalog/cielitodeflores_11.jpg",
     ],
@@ -847,7 +845,7 @@ export const catalogProducts: CatalogProduct[] = [
     ],
     isAvailable: true,
     badgeLabel: "EXCLUSIVO",
-    basePriceMxn: 1250,
+    basePriceMxn: 1200,
     defaultImages: [
       "/images/tenants/cielitodeflores/catalog/cielitodeflores_12.jpg",
     ],
@@ -911,7 +909,7 @@ export const catalogProducts: CatalogProduct[] = [
     ],
     isAvailable: true,
     badgeLabel: "EXCLUSIVO",
-    basePriceMxn: 1750,
+    basePriceMxn: 1700,
     defaultImages: [
       "/images/tenants/cielitodeflores/catalog/cielitodeflores_14.jpg",
     ],
@@ -1039,7 +1037,7 @@ export const catalogProducts: CatalogProduct[] = [
     ],
     isAvailable: true,
     badgeLabel: "EXCLUSIVO",
-    basePriceMxn: 2500,
+    basePriceMxn: 2400,
     defaultImages: [
       "/images/tenants/cielitodeflores/catalog/cielitodeflores_45.jpg",
     ],
@@ -1167,7 +1165,7 @@ export const catalogProducts: CatalogProduct[] = [
     ],
     isAvailable: true,
     badgeLabel: "EXCLUSIVO",
-    basePriceMxn: 1400,
+    basePriceMxn: 1100,
     defaultImages: [
       "/images/tenants/cielitodeflores/catalog/cielitodeflores_20.jpg",
     ],
@@ -1231,7 +1229,7 @@ export const catalogProducts: CatalogProduct[] = [
     ],
     isAvailable: true,
     badgeLabel: "EXCLUSIVO",
-    basePriceMxn: 1200,
+    basePriceMxn: 1100,
     defaultImages: [
       "/images/tenants/cielitodeflores/catalog/cielitodeflores_21.jpg",
     ],
@@ -1295,7 +1293,7 @@ export const catalogProducts: CatalogProduct[] = [
     ],
     isAvailable: true,
     badgeLabel: "EXCLUSIVO",
-    basePriceMxn: 1300,
+    basePriceMxn: 1200,
     defaultImages: [
       "/images/tenants/cielitodeflores/catalog/cielitodeflores_22.jpg",
     ],
@@ -1359,7 +1357,7 @@ export const catalogProducts: CatalogProduct[] = [
     ],
     isAvailable: true,
     badgeLabel: "EXCLUSIVO",
-    basePriceMxn: 2800,
+    basePriceMxn: 2700,
     defaultImages: [
       "/images/tenants/cielitodeflores/catalog/cielitodeflores_23.jpg",
     ],
@@ -1423,7 +1421,7 @@ export const catalogProducts: CatalogProduct[] = [
     ],
     isAvailable: true,
     badgeLabel: "EXCLUSIVO",
-    basePriceMxn: 1400,
+    basePriceMxn: 1350,
     defaultImages: [
       "/images/tenants/cielitodeflores/catalog/cielitodeflores_24.jpg",
     ],
@@ -1487,7 +1485,7 @@ export const catalogProducts: CatalogProduct[] = [
     ],
     isAvailable: true,
     badgeLabel: "EXCLUSIVO",
-    basePriceMxn: 1600,
+    basePriceMxn: 1500,
     defaultImages: [
       "/images/tenants/cielitodeflores/catalog/cielitodeflores_25.jpg",
     ],
@@ -1551,7 +1549,7 @@ export const catalogProducts: CatalogProduct[] = [
     ],
     isAvailable: true,
     badgeLabel: "EXCLUSIVO",
-    basePriceMxn: 1800,
+    basePriceMxn: 1700,
     defaultImages: [
       "/images/tenants/cielitodeflores/catalog/cielitodeflores_26.jpg",
     ],
@@ -1615,7 +1613,7 @@ export const catalogProducts: CatalogProduct[] = [
     ],
     isAvailable: true,
     badgeLabel: "EXCLUSIVO",
-    basePriceMxn: 700,
+    basePriceMxn: 750,
     defaultImages: [
       "/images/tenants/cielitodeflores/catalog/cielitodeflores_27.jpg",
     ],
@@ -1679,7 +1677,7 @@ export const catalogProducts: CatalogProduct[] = [
     ],
     isAvailable: true,
     badgeLabel: "EXCLUSIVO",
-    basePriceMxn: 1150,  
+    basePriceMxn: 1050,  
     defaultImages: [
       "/images/tenants/cielitodeflores/catalog/cielitodeflores_48.jpg",
     ],
@@ -1743,7 +1741,7 @@ export const catalogProducts: CatalogProduct[] = [
     ],
     isAvailable: true,
     badgeLabel: "EXCLUSIVO",
-    basePriceMxn: 2000,
+    basePriceMxn: 1900,
     defaultImages: [
       "/images/tenants/cielitodeflores/catalog/cielitodeflores_28.jpg",
     ],
@@ -1807,7 +1805,7 @@ export const catalogProducts: CatalogProduct[] = [
     ],
     isAvailable: true,
     badgeLabel: "EXCLUSIVO",
-    basePriceMxn: 1300,
+    basePriceMxn: 1200,
     defaultImages: [
       "/images/tenants/cielitodeflores/catalog/cielitodeflores_49.jpg",
     ],
@@ -1871,7 +1869,7 @@ export const catalogProducts: CatalogProduct[] = [
     ],
     isAvailable: true,
     badgeLabel: "EXCLUSIVO",
-    basePriceMxn: 1900,
+    basePriceMxn: 1800,
     defaultImages: [
       "/images/tenants/cielitodeflores/catalog/cielitodeflores_29.jpg",
     ],
@@ -1935,7 +1933,7 @@ export const catalogProducts: CatalogProduct[] = [
     ],
     isAvailable: true,
     badgeLabel: "EXCLUSIVO",
-    basePriceMxn: 1900,
+    basePriceMxn: 1700,
     defaultImages: [
       "/images/tenants/cielitodeflores/catalog/cielitodeflores_50.jpg",
     ],
@@ -1999,7 +1997,7 @@ export const catalogProducts: CatalogProduct[] = [
     ],
     isAvailable: true,
     badgeLabel: "EXCLUSIVO",
-    basePriceMxn: 1100,
+    basePriceMxn: 1000,
     defaultImages: [
       "/images/tenants/cielitodeflores/catalog/cielitodeflores_30.jpg",
     ],
@@ -2063,7 +2061,7 @@ export const catalogProducts: CatalogProduct[] = [
     ],
     isAvailable: true,
     badgeLabel: "EXCLUSIVO",
-    basePriceMxn: 1400,
+    basePriceMxn: 1300,
     defaultImages: [
       "/images/tenants/cielitodeflores/catalog/cielitodeflores_32.jpg",
     ],
@@ -2127,7 +2125,7 @@ export const catalogProducts: CatalogProduct[] = [
     ],
     isAvailable: true,
     badgeLabel: "EXCLUSIVO",
-    basePriceMxn: 1000,
+    basePriceMxn: 900,
     defaultImages: [
       "/images/tenants/cielitodeflores/catalog/cielitodeflores_33.jpg",
     ],
@@ -2191,7 +2189,7 @@ export const catalogProducts: CatalogProduct[] = [
     ],
     isAvailable: true,
     badgeLabel: "EXCLUSIVO",
-    basePriceMxn: 1700,
+    basePriceMxn: 1600,
     defaultImages: [
       "/images/tenants/cielitodeflores/catalog/cielitodeflores_34.jpg",
     ],
@@ -2319,7 +2317,7 @@ export const catalogProducts: CatalogProduct[] = [
     ],
     isAvailable: true,
     badgeLabel: "EXCLUSIVO",
-    basePriceMxn: 800,
+    basePriceMxn: 750,
     defaultImages: [
       "/images/tenants/cielitodeflores/catalog/cielitodeflores_36.jpg",
     ],
@@ -2383,7 +2381,7 @@ export const catalogProducts: CatalogProduct[] = [
     ],
     isAvailable: true,
     badgeLabel: "EXCLUSIVO",
-    basePriceMxn: 2100,
+    basePriceMxn: 2000,
     defaultImages: [
       "/images/tenants/cielitodeflores/catalog/cielitodeflores_37.jpg",
     ],
@@ -2447,7 +2445,7 @@ export const catalogProducts: CatalogProduct[] = [
     ],
     isAvailable: true,
     badgeLabel: "EXCLUSIVO",
-    basePriceMxn: 1100,
+    basePriceMxn: 1000,
     defaultImages: [
       "/images/tenants/cielitodeflores/catalog/cielitodeflores_38.jpg",
     ],
@@ -2511,7 +2509,7 @@ export const catalogProducts: CatalogProduct[] = [
     ],
     isAvailable: true,
     badgeLabel: "EXCLUSIVO",
-    basePriceMxn: 2000,
+    basePriceMxn: 1900,
     defaultImages: [
       "/images/tenants/cielitodeflores/catalog/cielitodeflores_39.jpg",
     ],
@@ -2575,7 +2573,7 @@ export const catalogProducts: CatalogProduct[] = [
     ],
     isAvailable: true,
     badgeLabel: "EXCLUSIVO",
-    basePriceMxn: 2900,
+    basePriceMxn: 2800,
     defaultImages: [
       "/images/tenants/cielitodeflores/catalog/cielitodeflores_40.jpg",
     ],
@@ -2639,7 +2637,7 @@ export const catalogProducts: CatalogProduct[] = [
     ],
     isAvailable: true,
     badgeLabel: "EXCLUSIVO",
-    basePriceMxn: 1600,
+    basePriceMxn: 1500,
     defaultImages: [
       "/images/tenants/cielitodeflores/catalog/cielitodeflores_41.jpg",
     ],
@@ -2703,7 +2701,7 @@ export const catalogProducts: CatalogProduct[] = [
     ],
     isAvailable: true,
     badgeLabel: "EXCLUSIVO",
-    basePriceMxn: 4100,
+    basePriceMxn: 4000,
     defaultImages: [
       "/images/tenants/cielitodeflores/catalog/cielitodeflores_46.jpg",
     ],
@@ -2767,7 +2765,7 @@ export const catalogProducts: CatalogProduct[] = [
     ],
     isAvailable: true,
     badgeLabel: "EXCLUSIVO",
-    basePriceMxn: 2150,
+    basePriceMxn: 2000,
     defaultImages: [
       "/images/tenants/cielitodeflores/catalog/cielitodeflores_47.jpg",
     ],

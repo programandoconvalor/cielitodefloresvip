@@ -50,9 +50,9 @@ export const siteData = {
   // ─── SEO ─────────────────────────────────────────────────────────────────────
   // Metadatos para motores de búsqueda: título de la pestaña, descripción y palabras clave.
   seo: {
-  title: `Arreglos Florales Exclusivos | ${site.businessName} `,
+  title: `Arreglos Florales VIP | ${site.businessName} `,
   description:
-    "Flores personalizadas, arreglos florales VIP, Rosas Premium, Gerberas, peluches y Globos de Helio para cumpleaños, aniversarios y Corazones de Flores para Novia. Entregas en San Mateo Atenco, Metepec, Lerma, Toluca y alrededores. Realiza tu pedido por WhatsApp.",
+    "Flores personalizadas, Arreglos Florales VIP, Rosas Premium, Gerberas Exclusivas, Peluches y Globos de Helio para Cumpleaños, Aniversarios y Corazones de Flores para Novia. Entregas en San Mateo Atenco, Metepec, Lerma, Toluca y alrededores. Realiza tu pedido por WhatsApp.",
   
   canonical: "https://cielitodefloresvip.vercel.app",
   robots: {

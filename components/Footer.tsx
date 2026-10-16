@@ -258,7 +258,7 @@ export default function Footer() {
                 marginTop: footerUi.bottomMarginTop,
               }}
             >
-              <p className="min-w-0 break-words">{bottomSection.copyrightPrefix} © {year} </p>
+              <p className="min-w-0 break-words">{bottomSection.copyrightPrefix} © {year}  Versión 1.1.1</p>
 
               {bottomSection.showDeveloperLink && developerHref ? (
                 <p className="min-w-0 break-words">

@@ -1,32 +1,79 @@
+
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 
 type Props = {
   sku: string;
   title: string;
+  price: number;
+  fallbackPrice?: number;
   selectedSize?: string | null;
+  imageUrl?: string;
 };
 
 export default function ProductActions({
   sku,
   title,
+  price,
+  fallbackPrice,
   selectedSize,
+  imageUrl,
 }: Props) {
-  const sizeText = selectedSize
-    ? ` - Tamaño: ${selectedSize.toUpperCase()}`
-    : "";
+  const phoneNumber = "527223514694";
+  const [origin, setOrigin] = useState("");
 
-  const href = `https://wa.me/?text=${encodeURIComponent(
-    `Hola, quiero solicitar información sobre ${title} (${sku})${sizeText}`,
+  useEffect(() => {
+    setOrigin(window.location.origin);
+  }, []);
+
+  const validPrice = [price, fallbackPrice].find(
+    (value) =>
+      value !== null &&
+      value !== undefined &&
+      Number.isFinite(Number(value)) &&
+      Number(value) > 0,
+  );
+
+  const formattedPrice =
+    validPrice !== undefined
+      ? new Intl.NumberFormat("es-MX", {
+          style: "currency",
+          currency: "MXN",
+          minimumFractionDigits: 2,
+          maximumFractionDigits: 2,
+        }).format(Number(validPrice))
+      : "Precio por confirmar";
+
+  const lines = [
+    "Hola, quiero solicitar información sobre este producto:",
+    `Producto: ${title}`,
+    `Código: ${sku}`,
+    `Precio: ${formattedPrice}`,
+  ];
+
+  if (imageUrl) {
+    const absoluteImageUrl = /^https?:\/\//i.test(imageUrl)
+      ? imageUrl
+      : origin
+        ? new URL(imageUrl, origin).href
+        : imageUrl;
+
+    lines.push(`Imagen: ${absoluteImageUrl}`);
+  }
+
+  const message = lines.join("\n");
+
+  const href = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+    message,
   )}`;
 
   return (
     <a
       href={href}
       target="_blank"
-      rel="noreferrer"
-      aria-label={`Solicitar información por WhatsApp sobre ${title}`}
+      rel="noopener noreferrer"
+      aria-label={`Pedir información sobre ${title}`}
       className="
         flex
         min-h-[46px]
