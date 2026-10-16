@@ -1997,7 +1997,7 @@ export const catalogProducts: CatalogProduct[] = [
     ],
     isAvailable: true,
     badgeLabel: "EXCLUSIVO",
-    basePriceMxn: 1000,
+    basePriceMxn: 999,
     defaultImages: [
       "/images/tenants/cielitodeflores/catalog/cielitodeflores_30.jpg",
     ],
@@ -2253,7 +2253,7 @@ export const catalogProducts: CatalogProduct[] = [
     ],
     isAvailable: true,
     badgeLabel: "EXCLUSIVO",
-    basePriceMxn: 1000,
+    basePriceMxn: 999,
     defaultImages: [
       "/images/tenants/cielitodeflores/catalog/cielitodeflores_35.jpg",
     ],
@@ -2445,7 +2445,7 @@ export const catalogProducts: CatalogProduct[] = [
     ],
     isAvailable: true,
     badgeLabel: "EXCLUSIVO",
-    basePriceMxn: 1000,
+    basePriceMxn: 999,
     defaultImages: [
       "/images/tenants/cielitodeflores/catalog/cielitodeflores_38.jpg",
     ],
